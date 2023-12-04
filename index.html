@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <style>
+        :root {
+            --tw-bg-opacity: 1;
+            --tw-text-opacity: 1;
+            --width: 1100px;
+        }
+
+        body {
+            background-color: rgb(245 245 238 / var(--tw-bg-opacity));
+        }
+
+
+        li.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+
+
+        .card-wrapper a {
+            text-decoration: none;
+            margin-top: 20px;
+        }
+
+        .card {
+            margin-top: 10px;
+            height: 100%;
+            padding: 1.25rem;
+            border-radius: 10px;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+        }
+
+        .card .title {
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 0.5rem;
+            color: rgb(16 138 210 / var(--tw-text-opacity));
+        }
+
+        .yc-companies {
+            margin-top: 80px;
+        }
+
+        .company {
+            margin-top: 20px;
+        }
+
+        .company > div {
+            padding: 1rem 0.75rem;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+            border-radius: 0.5rem;
+        }
+
+        .company > div > img {
+            max-width: 100%;
+            max-height: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQEAAAEBCAMAAABPMuDPAAAAQlBMVEXyZSLyZSLyZSLyZSLyZSL6roH91br2ilD+6tr4nGn0eDf7wp3+9e3zbyz3k1z0gUP7uI/5pXX+38n8y6z////yZSKuMvVfAAAABXRSTlOAQMBgICelMzEAAAOgSURBVHhe5MABDQAAAIIw3eifmSB8vA3Zt5vcuGEgCsLeUBSpnxnb4f2vmn068xK5Z8FuFQ8gCB9q80Dw42Pc+3y8UQABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQACBR7GnuAF6MafNKnDsv+xx/+1mv3nOKjDKXwRWbwIWYJl4F6wigvclUCcWaCKCeRKwAtNFoBN4TC1wigjelMA2+S5YRATv+VyfXKC+NYIqEphVQEfgT2Dv0ws8VAT+BEqAXbCJCPwJHAEEuorAn0AAARGBO4H1CCFw7O+JoArIuQVGERH4EhgBBFQE/gQmF9ARnP4EljG5gB5Iiz+BGkBAreTqTyCAgIzAnUAogdMbwSIm0cQCeiAtvgR6MIEqInAkEEBARuBKIJzAwxOB5SsBb822n0dQxSoOJNBFBI4EAgmMp4jAkUAAATWQ6s8SaEFvz8vPIqhiWAYQcEQgEogqMD5FBBcS+BrBBPRAqtcTqIEF2vUIqsgmgIAjApFAaIF6NQKbwPcIKKAHUr2WQI8k4I+gilUcQMARgUggvEC/EkEzAM8E7wu2CxGsdhJFEvBH0MQqDiegV3J1JBBQ4NhFBDqBzyTvC4qIQCawjgwCOgKdQIstoFdydSQQRcD2rSNoVimRQPuPCFaLFF1AR7A5EggloK/BdAIZBPRVqE6ghxLwR7BaoBQCOgKdQDqBLiIQCSQSGJuIoNlJlEVAR3C8TKCkfHX7fLn+T5tASoFjf9X6YmlSCozyYvxVO4kSCegI1r8n0FIJ6IF0igQyCej9txiWZAI6gsfoViWxwPiy+2gzqzi1QLUR2ATSCeiBtBuSfAI6AjsWkguM738I9PQC3ZFADoGxKYC95xfQEZRxA4FRRALHLQSOXSSQXkBHsB75BXQEbWQV0APJruL8AmMVCaQW0BEsI5uAXsn21FsJVJFAZgH9juJmAsVOorsLlLsJIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAm3547QAAoGPFkAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBH6XAwc0AAAAAME2+ncWxOXNAI6Cs14i3Db7AAAAAElFTkSuQmCC"
+                 class="h-full w-full" alt="Y Combinator" width="56" height="56">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+                <a href="#" class="btn btn-outline-success" type="submit">申请</a>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="page-row container card-wrapper">
+    <div class="row ">
+        <a class="col-lg-4 col-xs-1" href="#">
+            <div class="card">
+                <div class="title">YC Top Companies List by Revenue</div>
+                <div class="content">Congratulations to the companies recognized on the inaugural YC Top Companies List
+                    by
+                    Revenue!
+                </div>
+            </div>
+        </a>
+        <a class="col-lg-4 col-xs-1" href="#">
+            <div class="card">
+                <div class="title">YC Library</div>
+                <div class="content">Explore some of the best YC videos, podcasts, and essays from over the years. Come
+                    learn
+                    how to make something people want.
+                </div>
+            </div>
+        </a>
+        <a class="col-lg-4 col-xs-1" href="#">
+            <div class="card">
+                <div class="title">The Standard Deal</div>
+                <div class="content">When a company is accepted into the YC batch program, we invest a total of
+                    $500,000.
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<div class="page-row yc-companies ">
+    <h1 style="text-align: center">Top YC companies</h1>
+    <div class="container text-center">
+        <div class="row">
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img_1.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a> <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+            <div>
+                <img src="images/img_2.png"
+                     alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+            </div>
+        </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img_3.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img_4.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img_5.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img_6.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img_7.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img_8.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img_9.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img_10.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img_11.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <img src="images/img_12.png"
+                         alt="Stripe logo" class="inline-block max-h-6 max-w-full">
+                </div>
+            </a>
+            <a class="col-lg-2 col-md-3 col-sm-4 col-6 company" href="#">
+                <div>
+                    <span style="line-height:1.5rem" class="mr-0.5 max-h-6 text-2xl">+</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
